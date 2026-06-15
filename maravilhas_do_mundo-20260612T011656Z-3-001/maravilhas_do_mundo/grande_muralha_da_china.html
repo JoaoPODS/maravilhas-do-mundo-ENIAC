@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maravilhas do Mundo - Patrimônio</title>
+     <link rel="stylesheet" href="tela_inicial.css">
+    <link rel="stylesheet" href="patrimonio_dentro.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+      <a href="tela_inicial.html"> <img src="imagem_inicial/logo.png" alt="Logo">
+       </a> 
+       
+        <span>MARAVILHAS DO MUNDO</span>
+    </div>
+
+    <nav>
+        <div class="menu_suspenso">
+
+            <button class="botao_menu">Patrimônios</button>
+            <div class="submenu">
+                <a href="patrimonio_cultural.html">Culturais</a>
+                <a href="patrimonio_natural.html">Naturais</a>
+                <a href="patrimonio_misto.html">Mistos</a>
+            </div>
+        </div>
+      <a href="favoritos.jsp">Favoritos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="criar_conta.html">Criar conta</a>
+        <a href="entrar.html" class="botao_entrar">Entrar</a>
+    </nav>
+</header>
+
+   <main class="conteudo-patrimonio">
+
+
+    <h2 class="titulo-patrimonio">Grande Muralha da China:</h2>
+
+    <form action="favoritar.jsp" method="post">
+
+    <input
+        type="hidden"
+        name="patrimonio"
+        value= "grande_muralha_da_china.html">
+
+     <input
+        type="hidden"
+        name="imagem"
+        value= "imagem_inicial/muralha_china.png">
+
+    <button class="botao-favoritar">
+
+         Favoritar
+
+    </button>
+
+    </form>
+
+
+
+    <div class="container-imagem-patrimonio">
+        <img src="imagem_inicial/muralha_china.png" alt="Imagem do patrimônio" class="foto-patrimonio">
+    </div>
+
+
+    <div class="info-gerais">
+        <p><strong>Localização:</strong> Norte da China</p>
+        <p><strong>Ano de inscrição:</strong> 1987</p>
+    </div>
+
+
+    <section class="secao-detalhe">
+        <h2>Conceito:</h2>
+        <p class="texto-descricao">
+            A Grande Muralha foi construída continuamente desde o século III a.C. até o século XVII d.C. na fronteira norte do país, como o grande projeto de defesa militar dos sucessivos impérios chineses, com uma extensão total de mais de 20.000 quilômetros. A Grande Muralha começa a leste em Shanhaiguan, na província de Hebei, e termina em Jiayuguan, na província de Gansu, a oeste. Seu corpo principal consiste em muralhas, caminhos para cavalos, torres de vigia e abrigos ao longo da muralha, incluindo fortalezas e passagens.
+        </p>
+    </section>
+
+
+    <section class="secao-detalhe">
+        <h2>História:</h2>
+        <p class="texto-descricao">
+           Por volta de 220 a.C., sob o reinado de Qin Shi Huang, seções de fortificações anteriores foram unidas para formar um sistema de defesa unificado contra invasões vindas do norte. A construção continuou até a dinastia Ming (1368–1644), quando a Grande Muralha se tornou a maior estrutura militar do mundo. Sua importância histórica e estratégica só é comparável à sua relevância arquitetônica.
+        </p>
+    </section>
+
+
+</main>
+
+    <footer class="rodape">
+
+    <h3>Maravilhas do Mundo</h3>
+
+    <img src="imagem_inicial/logo.png">
+
+    <p>E-mail:</p>
+    <p>maravilhasdomundo@gmail.com</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maravilhas do Mundo - Patrimônio</title>
+     <link rel="stylesheet" href="tela_inicial.css">
+     <link rel="stylesheet" href="criar_conta.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+      <a href="tela_inicial.html"> <img src="imagem_inicial/logo.png" alt="Logo">
+       </a> 
+       
+        <span>MARAVILHAS DO MUNDO</span>
+    </div>
+
+    <nav>
+        <div class="menu_suspenso">
+
+            <button class="botao_menu">Patrimônios</button>
+            <div class="submenu">
+                <a href="patrimonio_cultural.html">Culturais</a>
+                <a href="patrimonio_natural.html">Naturais</a>
+                <a href="patrimonio_misto.html">Mistos</a>
+            </div>
+        </div>
+       <a href="favoritos.jsp">Favoritos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="criar_conta.html">Criar conta</a>
+        <a href="entrar.html" class="botao_entrar">Entrar</a>
+    </nav>
+</header>
+
+   <main>
+
+     <div class="formulario">
+
+        <h1>Criar Conta</h1>
+
+        <form action="gravar_usuario.jsp" method="post">
+
+            <label>Nome de usuário:</label>
+            <input type="text" name="txtNome" required>
+
+            <label>Senha:</label>
+            <input type="password" name="txtSenha" required>
+
+            <button type="submit">Criar</button>
+
+        </form>
+
+    </div>
+
+    
+
+
+
+</main>
+
+    <footer class="rodape">
+
+    <h3>Maravilhas do Mundo</h3>
+
+    <img src="imagem_inicial/logo.png">
+
+    <p>E-mail:</p>
+    <p>maravilhasdomundo@gmail.com</p>
+
+</footer>
+
+</body>
+</html>

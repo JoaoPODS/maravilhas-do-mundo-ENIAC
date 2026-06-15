@@ -1,0 +1,47 @@
+.conteudo-sobre{
+    padding: 40px 10%;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+
+.secao-sobre{
+    margin-bottom: 40px;
+}
+
+
+.secao-sobre h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.texto-sobre {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333333;
+
+}
+
+.secao-sobre p{
+    text-indent: 50px;
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 1.6;
+    text-align:justify;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.texto-contato p{
+     text-indent: 50px;
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 1.6;
+    text-align:justify;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}

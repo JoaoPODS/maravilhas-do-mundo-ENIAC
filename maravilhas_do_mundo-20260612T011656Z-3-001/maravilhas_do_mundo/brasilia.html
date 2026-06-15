@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maravilhas do Mundo - Patrimônio</title>
+     <link rel="stylesheet" href="tela_inicial.css">
+    <link rel="stylesheet" href="patrimonio_dentro.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+      <a href="tela_inicial.html"> <img src="imagem_inicial/logo.png" alt="Logo">
+       </a> 
+       
+        <span>MARAVILHAS DO MUNDO</span>
+    </div>
+
+    <nav>
+        <div class="menu_suspenso">
+
+            <button class="botao_menu">Patrimônios</button>
+            <div class="submenu">
+                <a href="patrimonio_cultural.html">Culturais</a>
+                <a href="patrimonio_natural.html">Naturais</a>
+                <a href="patrimonio_misto.html">Mistos</a>
+            </div>
+        </div>
+      <a href="favoritos.jsp">Favoritos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="criar_conta.html">Criar conta</a>
+        <a href="entrar.html" class="botao_entrar">Entrar</a>
+    </nav>
+</header>
+
+   <main class="conteudo-patrimonio">
+
+
+    <h2 class="titulo-patrimonio">Brasília:</h2>
+
+    <form action="favoritar.jsp" method="post">
+
+    <input
+        type="hidden"
+        name="patrimonio"
+        value= "brasilia.html">
+
+     <input
+        type="hidden"
+        name="imagem"
+        value= "imagem_inicial/brasilia.webp">
+
+    <button class="botao-favoritar">
+
+         Favoritar
+
+    </button>
+
+    </form>
+
+
+
+
+
+
+
+    <div class="container-imagem-patrimonio">
+        <img src="imagem_inicial/brasilia-space.webp" alt="Imagem do patrimônio" class="foto-patrimonio">
+    </div>
+
+
+    <div class="info-gerais">
+        <p><strong>Localização:</strong> Brasília/Distrito Federal/Brasil</p>
+        <p><strong>Ano de inscrição:</strong>1987</p>
+    </div>
+
+
+    <section class="secao-detalhe">
+        <h2>Conceito:</h2>
+        <p class="texto-descricao">
+            Planejada ao longo de um eixo monumental leste-oeste, atravessado por um eixo norte-sul curvado para acompanhar a topografia como uma via de transporte, Brasília é um exemplo definitivo do urbanismo modernista do século XX. Criada como capital do Brasil na região centro-oeste do país, de 1956 a 1960, como parte do projeto de modernização nacional do presidente Juscelino Kubitschek, a cidade uniu ideias de grandes centros administrativos e espaços públicos com novas ideias de vida urbana, promovidas por Le Corbusier em blocos de apartamentos de seis andares (quadras) sustentados por pilares que permitiam que a paisagem fluísse por baixo e ao redor deles. O planejamento da cidade destaca-se pela notável congruência entre o projeto urbano de Lucio Costa (o 'Plano Piloto') e as criações arquitetônicas de Oscar Niemeyer, refletida de forma mais marcante na interseção entre os eixos monumentais e de vias públicas, que se configura como fator determinante do esquema urbano da cidade e sublinha o caráter representativo da Praça dos Três Poderes e da Esplanada dos Ministérios, manifestando-se também na geometria do Congresso Nacional e na nova abordagem da vida urbana corporificada nas Unidades de Vizinhança e seus respectivos Superquadras.
+        </p>
+    </section>
+
+
+    <section class="secao-detalhe">
+        <h2>História:</h2>
+        <p class="texto-descricao">
+            A ideia de transferir a capital brasileira para o interior do país existia desde o período colonial, mas só saiu do papel sob o comando do presidente Juscelino Kubitschek, que promoveu sua construção entre 1956 e 1960. Projetada pelo urbanista Lúcio Costa (Plano Piloto) e pelo arquiteto Oscar Niemeyer, a cidade foi erguida no Planalto Central por milhares de operários vindos de todo o país, os chamados candangos. Inaugurada em 21 de abril de 1960 para centralizar a administração política e integrar a economia nacional, Brasília destaca-se internacionalmente por seus traços modernistas inovadores, o que lhe garantiu o título de Patrimônio Mundial pela UNESCO em 1987.
+        </p>
+    </section>
+
+
+</main>
+
+    <footer class="rodape">
+
+    <h3>Maravilhas do Mundo</h3>
+
+    <img src="imagem_inicial/logo.png">
+
+    <p>E-mail:</p>
+    <p>maravilhasdomundo@gmail.com</p>
+
+</footer>
+
+</body>
+</html>

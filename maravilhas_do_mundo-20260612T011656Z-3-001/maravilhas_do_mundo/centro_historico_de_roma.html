@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maravilhas do Mundo - Patrimônio</title>
+     <link rel="stylesheet" href="tela_inicial.css">
+    <link rel="stylesheet" href="patrimonio_dentro.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+      <a href="tela_inicial.html"> <img src="imagem_inicial/logo.png" alt="Logo">
+       </a> 
+       
+        <span>MARAVILHAS DO MUNDO</span>
+    </div>
+
+    <nav>
+        <div class="menu_suspenso">
+
+            <button class="botao_menu">Patrimônios</button>
+            <div class="submenu">
+                <a href="patrimonio_cultural.html">Culturais</a>
+                <a href="patrimonio_natural.html">Naturais</a>
+                <a href="patrimonio_misto.html">Mistos</a>
+            </div>
+        </div>
+      <a href="favoritos.jsp">Favoritos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="criar_conta.html">Criar conta</a>
+        <a href="entrar.html" class="botao_entrar">Entrar</a>
+    </nav>
+</header>
+
+   <main class="conteudo-patrimonio">
+
+
+    <h2 class="titulo-patrimonio">Centro histórico de Roma:</h2>
+
+    <form action="favoritar.jsp" method="post">
+
+    <input
+        type="hidden"
+        name="patrimonio"
+        value= "centro_historico_de_roma.html">
+
+    <input
+        type="hidden"
+        name="imagem"
+        value= "imagem_inicial/coliseu.png">
+
+
+    <button class="botao-favoritar">
+
+         Favoritar
+
+    </button>
+
+    </form>
+
+
+
+    <div class="container-imagem-patrimonio">
+        <img src="imagem_inicial/coliseu.png" alt="Imagem do patrimônio" class="foto-patrimonio">
+    </div>
+
+
+    <div class="info-gerais">
+        <p><strong>Localização:</strong> Roma/Itália</p>
+        <p><strong>Ano de inscrição:</strong> 1980</p>
+    </div>
+
+
+    <section class="secao-detalhe">
+        <h2>Conceito:</h2>
+        <p class="texto-descricao">
+            O patrimônio inclui uma série de testemunhos de valor artístico incomparável, produzidos ao longo de quase três milênios de história: monumentos da antiguidade (como o Coliseu, o Panteão, o complexo dos Fóruns Romano e Imperial), fortificações construídas ao longo dos séculos (como as muralhas da cidade e o Castelo de Santo Ângelo), desenvolvimentos urbanos dos períodos renascentista e barroco até os tempos modernos (como a Piazza Navona e o “Tridente” demarcado por Sisto V (1585-1590), incluindo a Piazza del Popolo e a Piazza di Spagna), edifícios civis e religiosos, com suntuosas decorações pictóricas, em mosaico e esculturais (como o Monte Capitolino e os Palácios Farnese e Quirinale, o Ara Pacis , as Basílicas Maiores de São João de Latrão, Santa Maria Maior e São Paulo Fora dos Muros), todos criados por alguns dos artistas mais renomados de todos os tempos.
+        </p>
+    </section>
+
+
+    <section class="secao-detalhe">
+        <h2>História:</h2>
+        <p class="texto-descricao">
+           Fundada às margens do rio Tibre em 753 a.C., segundo a lenda, por Rômulo e Remo, Roma foi primeiro o centro da República Romana, depois do Império Romano e, no século IV, tornou-se a capital do mundo cristão. A Roma Antiga foi sucedida, a partir do século IV, pela Roma cristã. A cidade cristã foi construída sobre a cidade antiga, reutilizando espaços, edifícios e materiais. A partir do século XV, os Papas promoveram uma profunda renovação da cidade e de sua imagem, refletindo o espírito do classicismo renascentista e, posteriormente, do Barroco. Desde a sua fundação, Roma tem estado continuamente ligada à história da humanidade. Como capital de um império que dominou o mundo mediterrâneo durante muitos séculos, Roma tornou-se, posteriormente, a capital espiritual do mundo cristão. 
+        </p>
+    </section>
+
+
+</main>
+
+    <footer class="rodape">
+
+    <h3>Maravilhas do Mundo</h3>
+
+    <img src="imagem_inicial/logo.png">
+
+    <p>E-mail:</p>
+    <p>maravilhasdomundo@gmail.com</p>
+
+</footer>
+
+</body>
+</html>
