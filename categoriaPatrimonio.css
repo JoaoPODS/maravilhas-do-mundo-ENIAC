@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Maravilhas do Mundo</title>
+    <link rel="stylesheet" href="tela_inicial.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+      <a href="tela_inicial.html"> <img src="imagem_inicial/logo.png" alt="Logo">
+       </a> 
+       
+        <span>MARAVILHAS DO MUNDO</span>
+    </div>
+
+    <nav>
+        <div class="menu_suspenso">
+
+            <button class="botao_menu">Patrimônios</button>
+            <div class="submenu">
+                <a href="patrimonio_cultural.html">Culturais</a>
+                <a href="patrimonio_natural.html">Naturais</a>
+                <a href="patrimonio_misto.html">Mistos</a>
+            </div>
+        </div>
+        <a href="favoritos.jsp">Favoritos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="criar_conta.html">Criar conta</a>
+        <a href="entrar.html" class="botao_entrar">Entrar</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="bem-vindo">
+        <h1>
+            Bem-vindo ao Maravilhas do Mundo,
+            onde você pode explorar e conhecer os
+            patrimônios da humanidade!!!
+        </h1>
+    </section>
+
+    <section class="recentes">
+
+        <h2>Recentemente adicionados</h2>
+
+        <div class="carrossel">
+          <a id="link_foto_carrossel" href="brasilia.html">
+            <img id="foto_carrossel" src="imagem_inicial/brasilia-space.webp" alt="Brasília">
+          </a>  
+            <a id="link_nome_recente" href="brasilia.html">
+                 <h3 id="nome_recente">Brasília</h3>
+            </a>
+           
+        </div>
+
+       
+    </section>
+
+    <section class="selecionar_categoria">
+
+        <h2>O que você deseja conhecer?</h2>
+
+        <div class="categorias">
+
+             
+                <a href="patrimonio_cultural.html"
+                class="categoria">
+                    <img src="imagem_inicial/angkor_wat.png">
+                <p>Patrimônios culturais</p>
+                </a>
+
+                <a href="patrimonio_natural.html"
+                class="categoria">
+                    <img src="imagem_inicial/yellowstone.png">
+                <p>Patrimônios naturais</p>
+                </a>
+
+                <a href="patrimonio_misto.html"
+                class="categoria">
+                    <img src="imagem_inicial/machupicchu.png">
+                <p>Patrimônios mistos</p>
+                </a>
+
+        </div>
+
+    </section>
+    <h2 class="titulo_secundario">O que é a Unesco?</h2>
+    <section class="texto">
+        
+        <p>
+            A Unesco, Organização das Nações Unidas para a Educação, Ciência e Cultura, é uma agência especializada da ONU com sede em Paris, na França. Foi fundada no ano de 1945 com o propósito de auxiliar na reconstrução do sistema educacional de países aliados na Segunda Guerra Mundial, porém rapidamente expandiu sua abrangência e objetivos. Hoje, com 193 membros e 11 associados, visa a cooperação internacional para garantir a paz e o desenvolvimento sustentável, atuando nas áreas da educação, da cultura e da ciência.
+
+
+        </p>
+    </section>
+
+    <h2 class="titulo_secundario">O que são os patrimônios mundiais?</h2>
+    <section class="texto">
+       
+        <p>
+            Patrimônio Mundial da Humanidade é uma região ou área (denominada "sítio") que é considerada pela Organização das Nações Unidas para a Educação, Ciência e Cultura (UNESCO) de possuir uma importância fundamental (natural ou cultural) para a humanidade, buscando assim preservá-lo para as futuras gerações. Este tipo de Património denominado "sítio" pode ser uma paisagem, monumento, prédio, conjunto arquitetônico, cidade, ou região. E é classificado como: cultural, natural, ou misto.
+        </p>
+    </section>
+
+</main>
+
+<footer class="rodape">
+
+    <h3>Maravilhas do Mundo</h3>
+
+    <img src="imagem_inicial/logo.png">
+
+    <p>E-mail:</p>
+    <p>maravilhasdomundo@gmail.com</p>
+
+</footer>
+
+
+
+
+
+
+<script>
+
+const patrimonios = [
+
+{
+    nome: "Brasília",
+    imagem: "imagem_inicial/brasilia-space.webp",
+    link: "brasilia.html"
+},
+
+{
+    nome: "Grande Muralha da China",
+    imagem: "imagem_inicial/muralha_china.png",
+    link: "grande_muralha_da_china.html"
+},
+
+{
+    nome: "Centro Histórico de Roma",
+    imagem: "imagem_inicial/coliseu.png",
+    link: "centro_historico_de_roma.html"
+}
+
+];
+
+let indice = 0;
+
+function trocarPatrimonio(){
+
+    indice++;
+
+    if(indice >= patrimonios.length){
+        indice = 0;
+    }
+
+    document.getElementById("foto_carrossel").src =
+        patrimonios[indice].imagem;
+
+    document.getElementById("nome_recente").innerHTML =
+        patrimonios[indice].nome;
+
+    document.getElementById("link_foto_carrossel").href =
+        patrimonios[indice].link;
+
+    document.getElementById("link_nome_recente").href =
+        patrimonios[indice].link;
+
+    
+}
+
+setInterval(trocarPatrimonio, 3000);
+
+</script>
+
+</body>
+</html>
+

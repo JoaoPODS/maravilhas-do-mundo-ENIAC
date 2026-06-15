@@ -1,0 +1,26 @@
+.formulario {
+
+    width: 350px;
+    margin: 80px auto;
+
+}
+
+.formulario input {
+
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.formulario button {
+
+    padding: 10px 25px;
+    cursor: pointer;
+
+}
+
+.formulario h1{
+    margin-bottom:20px;
+}

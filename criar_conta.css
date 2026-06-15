@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Maravilhas do Mundo</title>
+    <link rel="stylesheet" href="tela_inicial.css">
+    <link rel="stylesheet" href="sobre.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+      <a href="tela_inicial.html"> <img src="imagem_inicial/logo.png" alt="Logo">
+       </a> 
+       
+        <span>MARAVILHAS DO MUNDO</span>
+    </div>
+
+    <nav>
+        <div class="menu_suspenso">
+
+            <button class="botao_menu">Patrimônios</button>
+            <div class="submenu">
+                <a href="patrimonio_cultural.html">Culturais</a>
+                <a href="patrimonio_natural.html">Naturais</a>
+                <a href="patrimonio_misto.html">Mistos</a>
+            </div>
+        </div>
+        <a href="favoritos.jsp">Favoritos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="criar_conta.html">Criar conta</a>
+        <a href="entrar.html" class="botao_entrar">Entrar</a>
+    </nav>
+</header>
+
+<main class="conteudo-sobre">
+
+    <section class="secao-sobre">
+        <h2>Quem somos:</h2>
+        <p class="texto-sobre">
+           O Maravilhas do Mundo é um projeto criado com o objetivo de aproximar as pessoas dos Patrimônios Mundiais reconhecidos pela UNESCO. Acreditamos que conhecer a história, a cultura e as riquezas naturais do planeta é uma forma de valorizar a diversidade humana e incentivar a preservação desses locais para as futuras gerações.
+        </p>
+        
+        <p  class="texto-sobre">
+           Nosso site reúne informações sobre patrimônios culturais, naturais e mistos de diferentes partes do mundo, oferecendo uma experiência simples e acessível para estudantes, professores e qualquer pessoa interessada em aprender mais sobre a herança da humanidade.
+        </p>
+        <p  class="texto-sobre">
+            Por meio de pesquisas, imagens e descrições detalhadas, buscamos transformar o aprendizado em uma experiência interessante e inspiradora, despertando a curiosidade sobre as maravilhas que fazem parte da história e da identidade de diversos povos.
+
+        </p>
+
+        <br><br>
+
+        <h2>Em caso de dúvida ou feedback:</h2>
+        <p class="texto-sobre">
+           E-mail: maravilhas do mundo@gmail.com
+        
+    </section>
+
+    
+</main>
+
+<footer class="rodape">
+
+    <h3>Maravilhas do Mundo</h3>
+
+    <img src="imagem_inicial/logo.png">
+
+    <p>E-mail:</p>
+    <p>maravilhasdomundo@gmail.com</p>
+
+</footer>
+
+</body>
+</html>
+
